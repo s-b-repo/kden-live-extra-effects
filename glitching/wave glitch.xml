@@ -1,0 +1,25 @@
+<mlt>
+  <filter id="glitch_rgb">
+    <property name="mlt_service">rgbshift</property>
+    <property name="shift_x">20</property>
+    <property name="shift_y">15</property>
+  </filter>
+
+  <filter id="noise">
+    <property name="mlt_service">noise</property>
+    <property name="strength">70</property>
+  </filter>
+
+  <filter id="blur">
+    <property name="mlt_service">boxblur</property>
+    <property name="radius_x">15</property>
+    <property name="radius_y">15</property>
+  </filter>
+
+  <!-- Add Wave Effect -->
+  <filter id="wave">
+    <property name="mlt_service">wave</property>
+    <property name="amplitude">10</property>
+    <property name="frequency">5</property>
+  </filter>
+</mlt>
